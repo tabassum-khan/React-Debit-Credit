@@ -5,7 +5,13 @@
 }
 
 body{
+  background-color: #eee;
   font-family: 'Gowun Batang', serif;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
 }
 
 /* #2e1114
@@ -21,6 +27,8 @@ body{
 font-family: 'MonteCarlo', cursive;
 font-family: 'Roboto', sans-serif; */
 
+
+/********** NAVBAR  *******************/
 .nav-bar{
   align-items: center;
   background-color: #652232;
@@ -45,4 +53,17 @@ font-family: 'Roboto', sans-serif; */
   font-size: 1.3em;
   position: absolute;
   right: 15px;
+}
+
+/********** FOOTER  *******************/
+.footer {
+  bottom: 0;
+  color: #ccc;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.footer small {
+  font-size: 1em;
 }
