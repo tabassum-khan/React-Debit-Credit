@@ -1,3 +1,48 @@
-#root h1{
-    font-family: 'MonteCarlo', cursive;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Gowun Batang', serif;
+}
+
+/* #2e1114
+#501b1d
+#64485c
+#83677b
+#adadad
+#652232 
+#4e4e50
+*/
+
+/* font-family: 'Gowun Batang', serif;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Roboto', sans-serif; */
+
+.nav-bar{
+  align-items: center;
+  background-color: #652232;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: #adadad;
+}
+
+.nav-bar .logo{
+  font-family: 'MonteCarlo', cursive;
+  font-size: 2em;
+}
+
+.nav-bar .logout{
+  font-size: 1.3em;
+  position: absolute;
+  right: 15px;
 }
