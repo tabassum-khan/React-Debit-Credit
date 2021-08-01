@@ -41,7 +41,7 @@ font-family: 'Roboto', sans-serif; */
 
 .nav-bar a{
   text-decoration: none;
-  color: #adadad;
+  color: #dadada;
 }
 
 .nav-bar .logo{
@@ -54,6 +54,83 @@ font-family: 'Roboto', sans-serif; */
   position: absolute;
   right: 15px;
 }
+
+
+/********** HEADBAR  *******************/
+.headbar{
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+/* Search Bar */
+.search-bar{
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  width: 70%;
+}
+
+.search-bar .fa-search{
+  transition: all .55s ease;
+}
+
+.search-bar:hover .fa-search{
+  transform: scale(1.2);
+} 
+
+.search-bar input{
+  border-radius: 23px;
+  padding: 0.75rem 0.75rem;
+  padding-left: 3rem;
+}
+
+.search-bar input:focus, .search-bar input:active{
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.075);
+}
+
+.search-bar .fa{
+  color: #212529c9;
+  font-size: 1.1rem;
+  left: 20px;
+  position: absolute;
+  top: 15px;  
+}
+
+.headbar .transaction-btn{
+  display: inline-block;
+  position: relative;
+}
+
+.transaction-btn:hover .fa{
+  color: #000
+}
+
+.transaction-btn .fa{
+  position: absolute;
+  right: 10px;
+  top: 14.5px;
+  z-index: 1;
+}
+
+.headbar .btn{
+  background-color: #008CBA;
+  border: 1.5px solid #008CBA;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.7rem 0.75rem;
+  padding-right: 2.5rem;
+  position: relative;
+  top: -2px;
+}
+
+.headbar .btn:hover, .headbar .btn:active, .headbar .btn:focus{
+  background-color: #008cba91;
+  border: 1.5px solid #008cba91;
+  box-shadow: none;
+  color: #000;
+}
+
+
 
 /********** FOOTER  *******************/
 .footer {
