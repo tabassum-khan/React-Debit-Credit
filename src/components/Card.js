@@ -1,7 +1,7 @@
 import React from "react";
 
 const card = (
-    <div className="col-lg-4 col-md-6">
+    <div className="col-lg-3 col-md-6">
         <div className="card">
             <div className="card-header">
                 <p>Abdur Rehman</p>
@@ -18,4 +18,4 @@ function Card(){
     return card;    
 }
 
-export default Card;
+export default Card; 
