@@ -6,12 +6,20 @@
 
 body{
   background-color: #F9F0E7;
-  font-family: 'Gowun Batang', serif;
+  font-family: 'Bell MT', serif;
 }
 
 .container-fluid{
   margin: 0;
   padding: 0;
+}
+
+.row{
+  --bs-gutter-x:0 !important;
+}
+
+p{
+  margin: 0;
 }
 
 /* #2e1114
@@ -43,7 +51,7 @@ font-family: 'Roboto', sans-serif; */
   color: #fff;
   display: flex;
   font-family: 'MonteCarlo', cursive;
-  font-size: 1.5em;
+  font-size: 1.7em;
   list-style-type: none;
   margin: 0;
   margin-bottom: 20px;
@@ -60,12 +68,21 @@ font-family: 'Roboto', sans-serif; */
   color: #fff;
 }
 
+
+/** SEARCH BAR CONTAINER***/
+.search-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
 /* Search Bar */
 .search-bar{
   display: inline-block;
-  margin: 0 15px;
-  position: relative;
-  width: 70%;
+  flex-basis: 75%;
+  margin-right: 1.5rem;
+  position: relative; 
 }
 
 /*** Search icon ******/
@@ -88,31 +105,23 @@ font-family: 'Roboto', sans-serif; */
   background-color: #EFF2F0;
   border: none;
   border-radius: 23px;
+  box-shadow: inset -2px -6px 12px #3a3a3a6b;
+  font-size: 1.065rem;
   padding: 0.75rem 0.75rem;
   padding-left: 3rem;
 }
 
 .search-bar input:focus, .search-bar input:active{
   border: none;
-  box-shadow: none;
+  box-shadow: inset -2px -6px 12px #6963636b;
 }
 
 
 /************ Customer Button  ****************/
 .headbar .customer-btn{
   display: inline-block;
+  flex-basis: 25%;
   position: relative;
-}
-
-.customer-btn:hover .fa{
-  color: #000
-}
-
-.customer-btn .fa{
-  position: absolute;
-  right: 10px;
-  top: 14.5px;
-  z-index: 1;
 }
 
 /****  button  ****/
@@ -120,26 +129,94 @@ font-family: 'Roboto', sans-serif; */
   background-color: #58F6EC;
   border: 1.5px solid #58F6EC;
   border-radius: 5px;
+  box-shadow: inset -3px -7px 12px #34b7afe6;
   color: #000;
+  font-size: 1.1rem;
   padding: 0.7rem 0.75rem;
-  padding-right: 2.5rem;
-  position: relative;
-  top: -2px;
+  text-align: center;
+  width: 100%;
 }
 
 .customer-btn:hover .btn, .btn:focus, .btn:active{
-  box-shadow: none;
+  /* box-shadow: none; */
   color: #000;
   opacity: 0.85;
 }
 
+/*** button text  ***/
+.customer-btn .btn-text{
+  margin: 0;
+}
+
+/*** btn icon ****/
+.customer-btn:hover .fa{
+  color: #000
+}
+
+.customer-btn .fa{
+    padding-left: 1rem;
+}
+
+/*****************************  CARD *****************************************/
+/**** card-Container *******/
+.card-container.row{
+  padding: 50px;
+}
+
+.card-container .col-lg-4, .card-container .col-md-6{
+  padding: 20px;
+}
+
+/*** card ****/
+.card{  
+  border: none;
+}
+
+.card-header{
+  background-color: #ecdcec;
+  box-shadow: inset -3px -4px 15px 0px #3e3d3d38;
+  padding: 0.65rem 1.5rem;
+}
+
+.card-header:hover{
+  background-color: #efebef;
+  cursor: pointer;
+}
+
+.card-header p{
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.card-body{
+  background-color: #EDF8EB;
+  box-shadow: inset -4px -7px 14px 0px #54545430, 3px 7px 10px 0px #43434421;
+  padding: 1rem 1.5rem;
+}
+
+.card-body .transaction-type{
+  font-family: 'Gabriola';
+  font-size: 1.2rem;
+}
+
+.card-body .balance{
+  font-size: 1.3rem;
+}
+
+.card-body .balance.debit{
+  color: #da2121;
+}
+
+.card-body .balance.credit{
+  color: #1f8411;
+}
 
 
 /********** FOOTER  *******************/
 .footer {
-  bottom: 0;
   color: #ccc;
   position: absolute;
+  bottom: 0;
   text-align: center;
   width: 100%;
 }
@@ -147,3 +224,20 @@ font-family: 'Roboto', sans-serif; */
 .footer small {
   font-size: 1em;
 }
+
+
+
+
+
+/***********************************  MEDIA QUERIES ******************************************/
+/* @media only screen and (max-width: 1300px) {
+  
+  .search-container{
+    padding: 0 2.5rem;
+  }
+
+  .search-container .search-bar{
+    flex-basis: 75%; 
+  }
+
+} */
