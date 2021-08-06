@@ -1,0 +1,163 @@
+.modal{
+  top: 3rem;
+}
+
+.modal .close{
+    background: transparent;
+    border: none;
+    color: #da2121;
+    font-size: 1.2rem;
+  }
+  
+  .modal-header{
+    background-color: #EDF8EB; 
+    box-shadow: inset -2px -5px 10px 0 #d4d4d4;
+  }
+
+  .modal-header .form-control{
+    margin-right: 10px;
+  }
+  
+  .modal-body{
+    background-color: #ecdcec;
+    font-family: 'Times New Roman', serif;
+    text-align: left;
+  }
+
+  .transaction-list{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .transaction-list .transaction{
+      display: flex;
+      font-weight: 600;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .transaction .transaction-date{
+    flex-basis: 30%;
+  }
+
+  .transaction div{
+    flex-basis: 70%;
+    text-align: end;
+  }
+
+  .transaction .form-control{
+    display: inline-block;
+    font-weight: 600;
+    padding: 0; 
+    width: 35%;
+  }
+
+  .transaction .credit{
+    color: #158451;
+  }
+
+  .transaction .debit{
+      color: #A50909;
+  }
+
+  .transaction .fa-pencil{
+    padding: 0 10px;
+    position: relative;
+  }
+
+  .transaction .fa-trash{
+    position: relative;
+  }
+
+  .transaction .tooltip-text{
+    left: 0;
+    position: absolute;
+    top: -35px;
+  }
+
+  .transaction .tooltip-text.edit{
+    left: 0;
+  }
+
+  .transaction .tooltip-text.delete{
+    left: -23px;
+  }
+
+  .transaction .tooltip-text::after{
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 100%;
+  }
+
+  .transaction .fa:hover{
+    cursor: pointer;
+  }
+
+  .transaction .fa-pencil:hover .tooltip-text.edit{
+    visibility: visible;
+    opacity: 0.8;
+  }
+
+  .transaction .fa-trash:hover .tooltip-text.delete{
+    visibility: visible;
+    opacity: 0.8;
+  }
+
+  .modal-footer{
+    background-color: #ecdcec;
+    display: block;
+  }
+  
+  .modal-footer .transaction-money{
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .modal-footer .transaction-money i{
+    position: absolute;
+    padding: 12px;
+    left: 0;
+    border-right: 1px solid #ced4da;
+  }
+  
+  .modal-footer .transaction-money .form-control{
+    box-shadow: none;
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+    padding-left: 2.4rem;
+  }
+
+  .modal-footer .button-section{
+    display: flex;
+  }
+  
+  .modal-footer .btn{
+    box-shadow: none;
+    color: #FFF9F9;
+    flex-grow: 1;
+  }
+  
+  .modal-footer .btn-cred{
+    background-color: #25360C;
+    margin-right: 0.25rem;
+  }
+  
+  .modal-footer .btn-debt{
+    background-color: #A50909;
+    margin-left: 0.25rem;    
+  }
+  
+  .modal-footer .transaction-text{
+    padding-right: 8px;
+  }
+  
+  .modal-footer .btn i{
+    position: relative;
+    top: 2px;
+  }
+  
+  
+  

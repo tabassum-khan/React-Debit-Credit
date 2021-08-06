@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
+        <style>
+            #diva1{
+                position:relative;
+                height:90px;
+                background:orange;
+                transition:.6s;
+            }
+            #divaa1{
+                position:absolute;
+                right:0px;
+                width:120px;
+                height:80px;
+                border:5px solid orange;
+                border-radius:1rem;
+                background:orange;
+                transition:.6s;
+            }
+            #divaa1:hover{
+                height:210px;
+            }
+
+            #img1{
+                position:absolute;
+                right:15px;
+                margin-top: 5px;
+                width:60px;
+            }
+
+            .btn{
+                position:absolute;
+                top:0px;
+                left: -5px;
+                background:transparent;
+                width:120px;
+                color:transparent;
+                font-family:Georgia, serif;
+                font-size:15px;
+                border-bottom:1px solid transparent;
+                border-radius:0;
+                cursor:pointer;
+                transition:.6s;
+            }
+
+            #divaa1:hover > #btna1{
+                top:90px;
+                color:black;
+                border-bottom-color: dimgray;
+            }
+
+            #divaa1:hover > #btna2{
+                top:130px;
+                color:black;
+                border-bottom-color:dimgrey;
+            }
+
+            #divaa1:hover > #btna3{
+                top:170px;
+                color:black;
+                border-bottom-color:transparent;
+            }
+
+        </style>
+</head>
+<body>
+    <div id="diva1">
+        <div id="divaa1">
+            <img id="img1" src="https://image.flaticon.com/icons/png/512/78/78075.png">
+            <input class="btn" id="btna1" type="button" value="Theme">
+            <input class="btn" id="btna2" type="button" value="Profile">
+            <input class="btn" id="btna3" type="button" value="More">
+        </div>
+    </div>
+
+</body>
+</html>
+

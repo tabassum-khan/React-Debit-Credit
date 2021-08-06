@@ -1,0 +1,85 @@
+/**** card-Container *******/
+.card-container.row{
+    padding: 2rem 3rem;
+  }
+  
+  .card-container .col-lg-4, .card-container .col-md-6{
+    padding: 20px;
+  }
+  
+  /*** card ****/
+  .card{  
+    border: none;
+  }
+  
+  .card:hover{
+    cursor: pointer;
+  }
+  
+  /****** card header ******/
+  .card-header{
+    background-color: #ecdcec;
+    box-shadow: inset -3px -4px 15px 0px #3e3d3d38;
+    padding: 0.65rem 1.25rem;
+  }
+  
+  /**** card header input ****/
+  .customer-name{
+    display: flex;
+    position: relative;
+  }
+  
+  .customer-name .form-control{
+    display: inline-block;
+    margin-right: 25px;
+    padding: 0;
+    padding-left: 0.3rem;
+  }
+
+  .customer-name .fa-trash{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+  }
+
+  .customer-name .tooltip-text::after{
+    bottom: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-color: transparent transparent black transparent;
+  }
+
+  .customer-name .tooltip-text{
+    left: -22px;
+    top: 25px;
+  }
+
+  .customer-name .fa-trash:hover .tooltip-text{
+    visibility: visible;
+    opacity: 0.8;
+  }
+
+  /****** card body ******/
+  
+  .card-body{
+    background-color: #EDF8EB;
+    box-shadow: inset -4px -7px 14px 0px #54545430, 3px 7px 10px 0px #43434421;
+    padding: 1rem 1.5rem;
+  }
+  
+  .card-body .transaction-type{
+    font-family: 'Gabriola';
+    font-size: 1.2rem;
+  }
+  
+  .card-body .balance{
+    font-size: 1.3rem;
+  }
+  
+  .card-body .balance.debit{
+    color: #da2121;
+  }
+  
+  .card-body .balance.credit{
+    color: #1f8411;
+  }

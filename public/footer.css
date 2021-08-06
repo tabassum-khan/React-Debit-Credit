@@ -1,0 +1,13 @@
+/********** FOOTER  *******************/
+.footer {
+    bottom: 0;
+    color: #ccc;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer small {
+    font-size: 1em;
+  }

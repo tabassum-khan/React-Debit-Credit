@@ -1,0 +1,147 @@
+.headbar{
+    background-color: #B56357;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /********** NAVBAR  *******************/
+
+  .nav-bar{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 1.7em;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .nav-bar li{
+    flex-grow: 1;
+  }
+  
+  .nav-bar a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-bar.mobile{
+    display: none;
+  }
+
+  /************************* SEARCH BAR CONTAINER*************************/
+  .search-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem;
+  }
+  
+  /* Search Bar */
+  .search-bar{
+    display: inline-block;
+    flex-basis: 75%;
+    margin-right: 1.5rem;
+    position: relative; 
+  }
+  
+  /*** Search icon ******/
+  .search-bar .fa{
+    color: #212529c9;
+    font-size: 1.1rem;
+    left: 20px;
+    position: absolute;
+    top: 15px;  
+    transition: all .55s ease;
+  }
+  
+  
+  .search-bar:hover .fa-search{
+    transform: scale(1.2);
+  } 
+  
+  /*** Search input ******/
+  .search-bar input{
+    background-color: #EFF2F0;
+    border: none;
+    border-radius: 23px;
+    box-shadow: inset -2px -6px 12px #3a3a3a6b;
+    font-size: 1.065rem;
+    padding: 0.75rem 0.75rem;
+    padding-left: 3rem;
+  }
+  
+  .search-bar input:focus, .search-bar input:active{
+    border: none;
+    box-shadow: inset -2px -6px 12px #6963636b;
+  }
+  
+  
+  /************ Customer Button  ****************/
+  .customer-btn{
+    display: inline-block;
+    flex-basis: 25%;
+    position: relative;
+  }
+
+  .customer-btn .tooltip-text{
+    left: -118px;
+    position: absolute;
+    top: 2px;
+  }
+
+  .customer-btn .tooltip-text::after{
+    border-color: transparent transparent transparent black;
+    bottom: 50%;
+    left: 100%;
+    margin-bottom: -5px;
+  }
+
+  .customer-btn:hover .tooltip-text{
+    visibility: visible;
+    opacity: 0.8;
+  }
+
+  .tooltip-text::after{
+    bottom: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    border-color: transparent transparent transparent black;
+  }
+  
+  /****  button  ****/
+  .search-container .btn{
+    background-color: #58F6EC;
+    border: 1.5px solid #58F6EC;
+    border-radius: 5px;
+    box-shadow: inset -3px -7px 12px #34b7afe6;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.75rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .customer-btn:hover .btn, .btn:focus, .btn:active{
+    /* box-shadow: none; */
+    color: #000;
+    opacity: 0.85;
+  }
+  
+  /*** button text  ***/
+  .customer-btn .btn-text{
+    margin: 0;
+  }
+  
+  /*** btn icon ****/
+  .customer-btn:hover .fa{
+    color: #000
+  }
+  
+  .customer-btn .fa{
+      padding-left: 1rem;
+  }
